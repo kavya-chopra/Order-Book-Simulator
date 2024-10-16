@@ -1,6 +1,7 @@
 # to be migrated to a database
 
 from enum import Enum
+from Types import AssetType
 # from immutables import Map
 # from dataclasses import dataclass
 
@@ -10,7 +11,7 @@ from enum import Enum
 #     asset: AssetType
 
 class TickerSymbol():
-    def __init__(self, name: String, asset: AssetType):
+    def __init__(self, name:str, asset:AssetType):
         self.name = name
         self.asset = asset
 

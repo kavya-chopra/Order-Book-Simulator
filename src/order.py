@@ -1,8 +1,10 @@
 import uuid
 import datetime
+from Types import OrderAction, AssetType, OrderType, OrderStatus
 
 class Order:
-    def __init__(self, id:uuid, action:OrderAction, units:float, price:float, asset:AssetType, order_type: OrderType):
+
+    def __init__(self, action:OrderAction, units:float, price:float, asset:AssetType, order_type:OrderType):
         self.id = uuid.uuid1()
         self.action = action
         self.units = units

@@ -1,4 +1,5 @@
-import uuid
+from dataclasses import dataclass
+import Asset
 
 @dataclass
 class UserAsset:
